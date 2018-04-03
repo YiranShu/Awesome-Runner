@@ -91,10 +91,11 @@ public class GamePlayController : MonoBehaviour {
         if(health > 0) {
             // restart the game
             StartCoroutine(PlayerDied(Tags.GAMEPLAY_SCENE));
-            healthText.text = health.ToString();
         } else {
             StartCoroutine(PlayerDied(Tags.MAINMENU_SCENE));
         }
+
+        healthText.text = health.ToString();
     }
 
     public void IncrementScore(float scoreValue) {

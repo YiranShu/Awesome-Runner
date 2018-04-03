@@ -25,7 +25,7 @@ public class PlayerHealthDamageShoot : MonoBehaviour {
 	}
 
     void Fire() {
-        if(Input.GetKeyDown(KeyCode.K)) {
+        if(Input.GetKeyDown(KeyCode.S)) {
             if (canShoot) {
                 Vector3 bulletPos = transform.position;
                 bulletPos.y += 1.5f;
